@@ -1,0 +1,9 @@
+query Events($code: String!, $fightIDs: [Int], $start: Float!, $end: Float!,
+             $dataType: EventDataType!, $limit: Int = 100) {
+  reportData { report(code: $code) {
+    events(dataType: $dataType, fightIDs: $fightIDs, startTime: $start, endTime: $end, limit: $limit) {
+      data nextPageTimestamp
+    }
+  } }
+  rateLimitData { limitPerHour pointsSpentThisHour pointsResetIn }
+}

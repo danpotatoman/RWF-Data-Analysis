@@ -1,0 +1,2 @@
+# Keep source/query bytes consistent across Windows and Unix clones.
+* text=auto eol=lf

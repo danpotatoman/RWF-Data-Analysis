@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://community.developer.battle.net/api/pages/content/documentation/world-of-warcraft/profile-apis.json",
+    "file": "world-of-warcraft_profile-apis.json",
+    "sha256": "feb4f411083cf02a2d15ec8312f775f79f43037becba0ac92fcd36d15757c5bd",
+    "fetched_at": "2026-09-17T20:15:37.004643+00:00"
+  },
+  {
+    "url": "https://community.developer.battle.net/api/pages/content/documentation/world-of-warcraft/game-data-apis.json",
+    "file": "world-of-warcraft_game-data-apis.json",
+    "sha256": "cc35cc364e26a7015b4f128e75a1605d14ba481a1a6a64bc96bcb157c4ebd13a",
+    "fetched_at": "2026-09-17T20:15:37.240064+00:00"
+  },
+  {
+    "url": "https://community.developer.battle.net/api/pages/content/documentation/guides/getting-started.json",
+    "file": "guides_getting-started.json",
+    "sha256": "9cc8ce4e3ddd3ef32e9410ea08f7d574b478289184b5c14e3bf17abd7d85bb3f",
+    "fetched_at": "2026-09-17T20:15:37.361289+00:00"
+  },
+  {
+    "url": "https://community.developer.battle.net/api/pages/content/documentation/guides/using-oauth/client-credentials-flow.json",
+    "file": "guides_using-oauth_client-credentials-flow.json",
+    "sha256": "67d3903d3cccc910e11bf818f0d08cf3804ed26c1c4be4881a5318b38a1507bb",
+    "fetched_at": "2026-09-17T20:15:37.511070+00:00"
+  },
+  {
+    "url": "https://community.developer.battle.net/api/pages/content/documentation/world-of-warcraft/guides/namespaces.json",
+    "file": "world-of-warcraft_guides_namespaces.json",
+    "sha256": "1234b0700c9b4dfb09b610f1dd057c6367638400e10fbeb3c84b96f1cad629e6",
+    "fetched_at": "2026-09-17T20:15:37.628227+00:00"
+  },
+  {
+    "url": "https://community.developer.battle.net/api/pages/content/documentation/guides/using-oauth.json",
+    "file": "guides_using-oauth.json",
+    "sha256": "a2bc7a5de68ce321c18aa64d38ca9870d84d56be4196ad31143cc828af425757",
+    "fetched_at": "2026-09-17T20:15:37.844804+00:00"
+  }
+]

@@ -1,0 +1,9 @@
+query Reports($guildID: Int!, $start: Float!, $end: Float!, $page: Int!) {
+  reportData {
+    reports(guildID: $guildID, startTime: $start, endTime: $end, page: $page, limit: 100) {
+      current_page has_more_pages
+      data { code title startTime endTime revision segments visibility zone { id name } }
+    }
+  }
+  rateLimitData { limitPerHour pointsSpentThisHour pointsResetIn }
+}

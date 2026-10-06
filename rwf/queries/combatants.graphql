@@ -1,0 +1,10 @@
+query Combatants($code: String!, $fightIDs: [Int], $start: Float!, $end: Float!, $limit: Int = 1000) {
+  reportData {
+    report(code: $code) {
+      events(dataType: CombatantInfo, fightIDs: $fightIDs, startTime: $start, endTime: $end, limit: $limit) {
+        data nextPageTimestamp
+      }
+    }
+  }
+  rateLimitData { limitPerHour pointsSpentThisHour pointsResetIn }
+}

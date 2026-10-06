@@ -1,0 +1,4 @@
+#!/bin/sh
+# Opt in with: git config --local core.hooksPath .githooks
+# Activate the project's virtual environment so python resolves correctly.
+exec python tools/repository_hygiene.py --staged

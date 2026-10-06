@@ -1,0 +1,7 @@
+query Composition($guildID: Int!, $encounterID: Int!, $difficulty: Int!, $competitionID: Int, $size: Int) {
+  progressRaceData {
+    detailedComposition(guildID: $guildID, encounterID: $encounterID, difficulty: $difficulty,
+                        competitionID: $competitionID, size: $size)
+  }
+  rateLimitData { limitPerHour pointsSpentThisHour pointsResetIn }
+}

@@ -1,0 +1,6 @@
+query Race($zoneID: Int!, $competitionID: Int, $difficulty: Int!, $guildID: Int) {
+  progressRaceData {
+    progressRace(zoneID: $zoneID, competitionID: $competitionID, difficulty: $difficulty, guildID: $guildID)
+  }
+  rateLimitData { limitPerHour pointsSpentThisHour pointsResetIn }
+}

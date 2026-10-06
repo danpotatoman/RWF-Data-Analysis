@@ -1,0 +1,11 @@
+query SchemaProbe($name: String!) {
+  __type(name: $name) {
+    kind name
+    fields(includeDeprecated: true) {
+      name isDeprecated deprecationReason
+      args { name defaultValue type { kind name ofType { kind name ofType { kind name } } } }
+      type { kind name ofType { kind name ofType { kind name } } }
+    }
+    enumValues(includeDeprecated: true) { name isDeprecated }
+  }
+}

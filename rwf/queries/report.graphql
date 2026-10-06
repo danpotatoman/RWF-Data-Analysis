@@ -1,0 +1,14 @@
+query Report($code: String!) {
+  reportData {
+    report(code: $code) {
+      code startTime endTime revision segments visibility
+      region { id name }
+      masterData { actors { id gameID name server type subType } }
+      fights {
+        id name encounterID difficulty size startTime endTime kill
+        bossPercentage fightPercentage averageItemLevel friendlyPlayers friendlySpecs friendlyItemLevels inProgress
+      }
+    }
+  }
+  rateLimitData { limitPerHour pointsSpentThisHour pointsResetIn }
+}

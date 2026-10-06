@@ -1,0 +1,10 @@
+query Guild($name: String!, $serverSlug: String!, $serverRegion: String!, $page: Int!) {
+  guildData { guild(name: $name, serverSlug: $serverSlug, serverRegion: $serverRegion) {
+    id name competitionMode stealthMode
+    server { id name slug normalizedName blizzardID region { id name } }
+    members(page: $page, limit: 100) {
+      current_page has_more_pages
+      data { id canonicalID name server { id slug blizzardID region { id name } } }
+    }
+  } }
+}

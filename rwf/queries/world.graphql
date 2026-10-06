@@ -1,0 +1,5 @@
+query World {
+  worldData {
+    zones { id name encounters { id name } difficulties { id name } }
+  }
+}

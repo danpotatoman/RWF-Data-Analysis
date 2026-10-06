@@ -1,0 +1,2 @@
+# Optional tooling for authenticated feasibility checks; probes remain stdlib-only.
+graphql-core==3.2.6

@@ -1,0 +1,3 @@
+query RateLimit {
+  rateLimitData { limitPerHour pointsSpentThisHour pointsResetIn }
+}
