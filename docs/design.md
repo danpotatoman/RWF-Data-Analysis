@@ -1,11 +1,17 @@
 RWF collection design — initial proposal, 2026-09-17
 ===================================================
 
+**Scope:** design/methodology and intended broader architecture, not a live-run
+completion record. Research was updated 2026-09-22; later pilot implementation notes
+refer to the September 23 offline-readiness audit. State-tracking clarification added
+2026-10-06. [STATUS.md](../STATUS.md) is authoritative for current state and priority;
+dated [findings](feasibility-results.md) and [audits](pilot-audit.md) provide evidence.
+
 Preserve what each source returned, when it returned it, and how it was requested.
 Build analytical views from that evidence later. Keep equipment observations, report
 participation, identity links, and inferred loot history separate. The initial code implements
 probes, feasibility validation, a raw archive and the fixed one-guild pilot runner; the production
-architecture below remains a proposal. Updated 2026-09-22. See
+architecture below remains a proposal. See
 [empirical findings](feasibility-results.md) and the [48-hour pilot recommendation](pilot.md).
 
 Evidence and limits

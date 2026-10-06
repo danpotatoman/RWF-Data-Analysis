@@ -1,7 +1,11 @@
 # Liquid pilot operations
 
 This is a launch-ready, single-process implementation of the [48-hour experiment](pilot.md).
-The implementation has been tested offline; **the real 48-hour experiment has not been started**.
+The September 23 readiness review tested the implementation offline; the real
+48-hour experiment had not started at that review. Scope clarification added
+2026-10-06: this is an operator runbook, not an execution record. Read
+[STATUS.md](../STATUS.md) for current state and active runs, and follow the
+[experiment-record convention](experiments/README.md) for intentional experiments.
 The coding-agent/VS Code session is not the scheduler. A detached Python process does the work.
 
 ## Before launch
@@ -309,5 +313,6 @@ rate/point deferral, path/lock safety, immutable evidence attribution, backup/re
 status and raw replay after removal of the operational rate cache. Saved real equipment samples
 and the saved schema can be inspected offline as compatibility checks; no live feasibility repeat
 is necessary. No live pilot or 48-hour success is claimed by these synthetic tests.
-See the [completion audit](pilot-audit.md) for the final checklist, live-path verification and results.
+See the [implementation/offline-readiness audit](pilot-audit.md) for the final checklist,
+mocked HTTP-path verification and synthetic results.
 State version 2 refuses to resume older version-1 synthetic runs; their raw archives remain readable.

@@ -56,24 +56,16 @@ See [design and limitations](docs/design.md) for the detailed methodology and in
 
 ## Research status
 
-The live feasibility study was performed on **2026-09-17** and analyzed on **2026-09-22**. These observations are dated research findings, not guarantees about current provider behavior.
+The live feasibility study was completed on **2026-09-17** and analyzed on
+**2026-09-22**. The pilot software is implemented, and accelerated **synthetic**
+48-hour validation was completed and analyzed; this was not live collection.
+The **real wall-clock 48-hour pilot has not started according to repository evidence**.
+Production-scale collection and the broader data model remain planned/deferred.
 
-Implemented:
-
-- authenticated Blizzard and WCL probes
-- exact-byte SQLite response archival
-- bounded pagination
-- schema validation
-- saved-evidence replay
-- fixed 48-hour pilot scheduling
-- request/API-budget controls
-- restart recovery
-- consistent backup
-- read-only status/projection tooling
-- synthetic offline pilot simulation
-- repository publication/security safeguards
-
-The **real 48-hour pilot has not started**. Production-scale collection and the broader data model remain proposals pending the results of that experiment.
+[STATUS.md](STATUS.md) is the authoritative current-state index, including active
+runs, evidence and the next milestone; it takes precedence if this summary becomes
+stale. Dated findings describe their original observation windows, not current provider
+guarantees. See [the experiment-record convention](docs/experiments/README.md).
 
 ## Setup and offline tests
 
@@ -196,6 +188,7 @@ Provider retention and redistribution requirements should be reviewed before lon
 
 | Location | Purpose |
 | --- | --- |
+| `STATUS.md` | Authoritative current state, active runs, evidence and next milestone |
 | `rwf/` | API clients, archive schema, validation, pilot scheduler and replay |
 | `rwf/queries/` | Authored provider query documents |
 | `tests/` | Offline synthetic tests and fixture provenance |
@@ -212,7 +205,7 @@ Additional research documentation:
 - [Feasibility findings](docs/feasibility-results.md)
 - [Proposed data model](docs/data-model.md)
 - [48-hour pilot specification](docs/pilot.md)
-- [Historical pilot audit](docs/pilot-audit.md)
+- [Historical pilot implementation/offline-readiness audit](docs/pilot-audit.md)
 
 `python tools/research_docs.py` downloads public Blizzard documentation into ignored `data/research/`.
 

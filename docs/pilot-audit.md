@@ -1,4 +1,10 @@
-# Liquid pilot completion audit — 2026-09-23
+# Liquid pilot implementation and offline-readiness audit — 2026-09-23
+
+**Historical software and SYNTHETIC execution audit, not a completed live pilot.**
+State-tracking clarification added 2026-10-06; historical results and counts below
+are preserved. [STATUS.md](../STATUS.md) supplies current state. Checklist "Complete"
+means implementation/offline verification unless otherwise qualified, not measured
+live experiment success. See [experiment records](experiments/README.md).
 
 **READY FOR REAL 48-HOUR PILOT** after the offline checks below. This is readiness to run the
 experiment, not a claim that real collection met its scientific criteria. No live pilot or new
@@ -7,7 +13,8 @@ nonempty; validity at launch is checked by OAuth/bootstrap. No credential values
 
 The prior implementation request and `pilot.md` were compared with the actual runner, probe,
 archive, projections and tests. The September 17 feasibility evidence remains unchanged. This
-folder has no Git metadata; no repository, remote or commit was created.
+folder had no Git metadata at this September 23 audit; no repository, remote or
+commit was created during that audit.
 
 ## Requirement checklist
 
@@ -43,7 +50,11 @@ collector: the local budget cannot observe its requests. WCL deltas include othe
 and cannot prove exact per-query attribution. Unexpected query costs can exceed their reservation;
 the runner records them and defers subsequent work rather than promising an absolute cost bound.
 
-## Actual execution trace
+## Implemented execution path and mocked/offline verification
+
+The following describes the runner's implemented behavior, not a log of live
+collection. The real HTTP wiring was exercised with a mocked opener; the accelerated
+scenario used synthetic responses and a virtual clock.
 
 1. `rwf.pilot run --data-dir ...` parses an explicit directory; `run` refuses an existing archive.
 2. Resolved live paths reject project/known sync roots and UNC/relative paths.

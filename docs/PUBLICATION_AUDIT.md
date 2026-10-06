@@ -1,5 +1,12 @@
 # Local publication preparation — 2026-10-06
 
+**Historical preparation snapshot, before the initial commit/remote setup.** The
+staged-file counts, Git state, test results and readiness judgment below describe
+that preparation and MIT follow-up, not the repository's current Git state. Scope
+clarification added 2026-10-06; original results are preserved. See
+[STATUS.md](../STATUS.md) for current project state. This is a repository audit with
+offline verification, not evidence that the live 48-hour pilot ran.
+
 Status: **PASS WITH WARNINGS** pending owner review of the dated public
 game-character/report references and provider-material considerations in the research
 narrative. The owner selected MIT for original repository software; that decision

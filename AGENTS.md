@@ -1,6 +1,31 @@
 # Repository instructions
 
-Read [repository hygiene](docs/REPOSITORY_HYGIENE.md) before adding artifacts.
+Read [STATUS.md](STATUS.md) near the start of project work. It is the authoritative
+current-state index and takes precedence over stale summaries. Read
+[repository hygiene](docs/REPOSITORY_HYGIENE.md) before adding artifacts.
+
+## Project-state discipline
+
+- Update STATUS when implementation, validation, live execution, analysis, active
+  runs, blockers/deferments or the next milestone materially change. Update its review
+  date; supporting historical records identify their own revisions where available.
+  Do not require STATUS to name its containing commit or amend commits solely to
+  refresh a status-review hash.
+- Support changes with repository evidence and links. Keep implementation, validation,
+  execution and analysis separate. IMPLEMENTED or TESTED / SIMULATED never proves
+  LIVE EXECUTED; completed execution never proves scientific acceptance criteria passed.
+- Register active experiments with LIVE/SYNTHETIC mode, run ID, dates, last verified
+  state and sanitized evidence. Do not infer liveness from a PID or stale durable phase.
+- Create/finalize a record for meaningful completed live or synthetic experiments using
+  [the experiment convention](docs/experiments/README.md). Routine test reruns need
+  a dated validation summary, not duplicate experiment records.
+- Preserve historical findings/audits, their counts and dates. Use dated corrections,
+  errata or superseding records for substantive changes; never silently rewrite results
+  or assign current capture revisions to experiments with unknown original revisions.
+- Keep STATUS short and link outward. README is a public summary; design/spec/runbooks
+  describe methodology; raw evidence stays local under the hygiene policy.
+
+## Repository hygiene and licensing
 
 - Never commit credentials, tokens, authenticated headers, or secret/local configuration.
 - Never expose secret values in output, logs, reports, patches, or test diagnostics.

@@ -1,10 +1,16 @@
 # Authenticated feasibility findings
 
+**Historical LIVE study record:** observations on 2026-09-17 and analysis on
+2026-09-22. State-tracking clarification added 2026-10-06; original measurements
+and conclusions are preserved. [STATUS.md](../STATUS.md) supplies current project
+state; [experiment records](experiments/README.md) defines the evidence convention.
+
 Live observations: **2026-09-17**, main archive 21:56:49–22:03:56 UTC. Recovery and offline
 analysis: **2026-09-22**. These are dated observations, not a claim about today's roster/schema.
 No additional live calls were made during recovery. All four credential variables were present
 and nonempty on recovery; both credential pairs authenticated successfully in the saved run.
-Values and OAuth responses were not retained. No Git repository exists in this workspace.
+Values and OAuth responses were not retained. No Git repository existed in this
+workspace at the September 22 recovery.
 
 Evidence labels below: **E** = persisted authenticated API observation; **D** = official
 documentation/schema description; **I** = interpretation; **U** = unresolved. Synthetic tests
@@ -313,4 +319,8 @@ character transfers/renames/ID discrepancies, exact bonus/upgrade/embellishment 
 full loot/trade provenance, completeness of CombatantInfo for very large/revised reports,
 composition timing/private-source linkage, status-driven historical retention and CN access.
 No credential blocker affected the saved study. There is no September 22 live-auth/schema refresh,
-by design. See the proposed [48-hour pilot](pilot.md); it is **not implemented**.
+by design. As of this **2026-09-22 analysis**, the proposed [48-hour pilot](pilot.md)
+was **not implemented**. That implementation status was subsequently superseded by
+the [2026-09-23 implementation and offline-readiness audit](pilot-audit.md), which
+does not establish execution of the real live pilot. See [STATUS.md](../STATUS.md)
+for current execution state.

@@ -1,6 +1,12 @@
 Validation runbook and results
 ==============================
 
+**Scope:** September 17 live feasibility and September 22 offline recovery, followed
+by methodology for future validation. State-tracking clarification added 2026-10-06.
+Historical counts and execution claims below describe that recovery, not current
+suite size or pilot execution. See [STATUS.md](../STATUS.md) for current state and
+[experiment records](experiments/README.md) for recording later experiments.
+
 Completed live **2026-09-17**, recovered and analyzed offline **2026-09-22**. All four credential
 variables were present/nonempty at recovery. Both APIs authenticated in the saved run. Read
 [feasibility results](feasibility-results.md) for evidence-labelled findings, roster counts,
@@ -172,3 +178,5 @@ and whether loot-related fields actually identify events rather than equipped it
 For each experiment record: hypothesis, input/query hash, observation UUIDs, authentication mode,
 expected control, measured result, explanation alternatives, and status (`confirmed`, `refuted`,
 `inconclusive`, `not tested`). This evidence ledger should drive the next parser/model revision.
+Follow the [record convention](experiments/README.md); hypothesis conclusions are
+separate from execution completion and acceptance-criterion outcomes.

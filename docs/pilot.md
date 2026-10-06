@@ -1,7 +1,9 @@
 # Pilot experiment: 48 hours, one whole guild
 
 **Baseline experiment specification; runner completion audited offline on 2026-09-23.**
-The real experiment has not been started. Read [operations](pilot-operations.md) for exact launch,
+At that readiness review, the real experiment had not been started. Scope clarification
+added 2026-10-06: [STATUS.md](../STATUS.md) supplies current execution state; this
+document defines the protocol and acceptance criteria. Read [operations](pilot-operations.md) for exact launch,
 restart, report and backup commands, software validation, and concrete scheduling/budget choices.
 The September 17 roster and query-cost evidence justify a
 small whole-guild Blizzard experiment. The highest-value question is whether repeated snapshots
@@ -149,4 +151,4 @@ tolerance. There are 49 scheduled WCL budget observations including that end
 boundary, plus observations needed after missing/expensive responses. These concrete choices are
 explained in the runbook; actual durations and extra requests remain measurable.
 Optional WCL details preserve ten of the local 60 points for core checks. See the
-[completion audit](pilot-audit.md) for exact planned workload and verified limitations.
+[implementation/offline-readiness audit](pilot-audit.md) for exact planned workload and verified limitations.
